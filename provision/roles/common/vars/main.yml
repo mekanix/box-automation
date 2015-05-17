@@ -48,4 +48,9 @@ common_packages:
   - name: weechat
   - name: wget
   - name: wgetpaste
+  - name: wpa_gui
+  - name: wpa_supplicant
   - name: xautolock
+  - name: xf86-input-keyboard
+  - name: xf86-input-mouse
+  - name: xterm
