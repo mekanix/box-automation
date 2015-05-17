@@ -1,0 +1,7 @@
+*.pyc
+vagrant_ansible_inventory_*
+.vagrant/
+.ropeproject/
+*.log
+*.swp
+inventory
