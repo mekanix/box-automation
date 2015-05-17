@@ -6,6 +6,7 @@ common_packages:
   - name: curl
   - name: elinks
   - name: evince
+  - name: firefox
   - name: fish
   - name: geeqie
   - name: gimp
