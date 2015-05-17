@@ -1,5 +1,6 @@
 common_packages:
   - name: arandr
+  - name: bash
   - name: chromium
   - name: cmake
   - name: curl
