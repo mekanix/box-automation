@@ -1,5 +1,2 @@
-# -*- mode: ansible -*-
-# vi: set ft=ansible :
-
-taskwarrior_version: "2.4.3"
-taskwarrior_sh256sum: "bb02b8fa86fe213a2e6ab093a045383afbabe20e59dd0b0f5dd6430d9de06bd2"
+---
+user: meka

@@ -1,20 +1,4 @@
-- name: restart slim
-  sudo: yes
-  service:
-    name: slim
-    enabled: yes
-    state: restarted
-
-- name: restart openntpd
-  sudo: yes
-  service:
-    name: openntpd
-    enabled: yes
-    state: restarted
-
-- name: restart wicd
-  sudo: yes
-  service:
-    name: wicd
-    enabled: yes
-    state: restarted
+---
+- name: update timezone
+  become: yes
+  shell: dpkg-reconfigure --frontend noninteractive tzdata

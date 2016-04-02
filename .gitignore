@@ -4,4 +4,4 @@ vagrant_ansible_inventory_*
 .ropeproject/
 *.log
 *.swp
-inventory
+*.retry

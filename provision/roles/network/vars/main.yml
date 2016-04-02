@@ -1,0 +1,9 @@
+---
+network_packages:
+  - name: minicom
+  - name: nmap
+  - name: sshpass
+  - name: syncthing
+  - name: tcpdump
+  - name: tor
+  - name: wget

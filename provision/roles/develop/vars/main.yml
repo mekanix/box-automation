@@ -1,0 +1,14 @@
+---
+develop_packages:
+  - name: arduino
+  - name: cmake
+  - name: curl
+  - name: emacs24
+  - name: gist
+  - name: git
+  - name: node
+  - name: python
+  - name: tmux
+  - name: vagrant
+  - name: vim
+  - name: virtualbox-ose

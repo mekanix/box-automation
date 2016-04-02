@@ -1,0 +1,18 @@
+---
+user_directories:
+  - path: Files
+  - path: Mail
+  - path: mobile
+  - path: repos
+  - path: secret
+  - path: tilda
+
+user_repositories:
+  - repo: "https://github.com/mekanix/dotfiles"
+    dest: "dotfiles"
+
+user_config:
+  - name: ".gnupg"
+  - name: ".netrc"
+  - name: ".ssh"
+  - name: "MusE"

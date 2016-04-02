@@ -1,0 +1,6 @@
+---
+util_packages:
+  - name: keepassx2
+  - name: pv
+  - name: the_silver_searcher
+  - name: unzip

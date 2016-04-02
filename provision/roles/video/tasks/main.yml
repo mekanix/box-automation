@@ -1,0 +1,6 @@
+---
+- name: install video packages
+  become: yes
+  with_items: "{{ video_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

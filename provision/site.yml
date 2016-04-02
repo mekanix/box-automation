@@ -1,4 +1,15 @@
-- hosts: all
+---
+- name: Desktop provisioning
+  hosts: all
   roles:
     - common
-    - users
+    - audio
+    - communication
+    - develop
+    - gui
+    - network
+    - photo
+    - user
+    - utils
+    - video
+    - web

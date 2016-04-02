@@ -1,7 +1,0 @@
-user_pip_packages:
-  - name: ansible
-  - name: ipdb
-
-user_gem_packages:
-  - name: jekyll
-  - name: jekyll-sitemap

@@ -1,23 +1,13 @@
-- name: install packages
-  sudo: yes
-  with_items: common_packages
+---
+- name: install common packages
+  become: yes
+  with_items: "{{ common_packages }}"
   pkgng:
     name: "{{ item.name }}"
-    state: present
 
-- name: create /mnt/usb
-  sudo: yes
-  file:
-    path: /mnt/usb
-    owner: root
-    group: wheel
-    state: directory
-
-- name: create /bin/bash link
-  sudo: yes
+- name: link bash
+  become: yes
   file:
     src: /usr/local/bin/bash
     dest: /bin/bash
-    owner: root
-    group: wheel
     state: link

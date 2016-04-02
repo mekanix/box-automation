@@ -1,0 +1,6 @@
+---
+- name: install network packages
+  become: yes
+  with_items: "{{ network_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

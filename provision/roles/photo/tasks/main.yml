@@ -1,0 +1,6 @@
+---
+- name: install photo packages
+  become: yes
+  with_items: "{{ photo_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

@@ -1,0 +1,6 @@
+---
+- name: install audio packages
+  become: yes
+  with_items: "{{ audio_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

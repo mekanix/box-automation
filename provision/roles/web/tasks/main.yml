@@ -1,0 +1,6 @@
+---
+- name: install web packages
+  become: yes
+  with_items: "{{ web_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

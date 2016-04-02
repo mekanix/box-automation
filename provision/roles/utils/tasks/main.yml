@@ -1,0 +1,6 @@
+---
+- name: install util packages
+  become: yes
+  with_items: "{{ util_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

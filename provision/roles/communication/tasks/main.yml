@@ -1,0 +1,6 @@
+---
+- name: install communication packages
+  become: yes
+  with_items: "{{ communication_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

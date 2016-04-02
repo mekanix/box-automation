@@ -1,0 +1,8 @@
+---
+audio_packages:
+  - name: ardour
+  - name: jackit
+  - name: ncmpcpp
+  - name: normalize
+  - name: oss
+  - name: sox

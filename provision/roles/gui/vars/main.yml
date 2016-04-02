@@ -1,0 +1,13 @@
+---
+gui_packages:
+  - name: arandr
+  - name: evince
+  - name: i3
+  - name: liferea
+  - name: rofi
+  - name: rxvt-unicode
+  - name: slim
+  - name: synergy
+  - name: unclutter
+  - name: urxvt-perls
+  - name: xautolock
