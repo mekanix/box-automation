@@ -2,6 +2,9 @@
 vagrant_ansible_inventory_*
 .vagrant/
 .ropeproject/
+*.box
 *.log
-*.swp
 *.retry
+*.swp
+packer_cache
+output-virtualbox-iso

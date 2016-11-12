@@ -1,0 +1,91 @@
+{
+    "builders": [
+        {
+            "type": "virtualbox-iso",
+            "boot_command": [
+                "I<wait>",
+                "<enter><wait>",
+                "vagrant<enter><wait>",
+                "p<spacebar>",
+                "<up><spacebar><enter><wait>",
+                "<down><down><down><enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<spacebar><enter><wait>",
+                "<left><enter><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
+                "vagrant<enter><wait>",
+                "vagrant<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait5>",
+                "<right><enter><wait>",
+                "<enter><wait>",
+                8,
+                "<enter><wait>",
+                444,
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "vagrant<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "wheel operator<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "vagrant<enter><wait>",
+                "vagrant<enter><wait>",
+                "<enter><wait>",
+                "yes<enter><wait>",
+                "no<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<enter><wait>",
+                "<wait10><wait10><wait10><wait10><wait10>",
+                "root<enter><wait>",
+                "vagrant<enter><wait>",
+                "sed -i -e 's/#PermitRootLogin no/PermitRootLogin yes/' /etc/ssh/sshd_config<enter><wait>",
+                "service sshd restart<enter>",
+                "chsh -s sh root<enter><wait>"
+            ],
+            "boot_wait": "35s",
+            "disk_size": 20480,
+            "guest_os_type": "FreeBSD_64",
+            "iso_checksum_url": "http://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/11.0/CHECKSUM.SHA512-FreeBSD-11.0-RELEASE-amd64",
+            "iso_checksum_type": "sha512",
+            "iso_url": "http://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/11.0/FreeBSD-11.0-RELEASE-amd64-disc1.iso",
+            "shutdown_command": "halt -p",
+            "ssh_password": "vagrant",
+            "ssh_username": "root",
+            "ssh_wait_timeout": "30s"
+        }
+    ],
+    "provisioners": [
+        {
+            "script": "scripts/postinstall.sh",
+            "type": "shell",
+            "execute_command": "chmod +x {{ .Path }}; env {{ .Vars }} {{ .Path }}"
+        }
+    ],
+    "post-processors": [
+        {
+            "output": "FreeBSD-11.0-RELEASE-zfs.box",
+            "type": "vagrant",
+            "override": {
+                "virtualbox": {
+                    "vagrantfile_template": "./Vagrantfile.virtualbox"
+                }
+            }
+        }
+    ]
+}

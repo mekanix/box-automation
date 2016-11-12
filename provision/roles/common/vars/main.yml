@@ -1,5 +1,6 @@
 ---
 common_packages:
+  - name: automount
   - name: bash
   - name: curl
   - name: fish
