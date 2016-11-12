@@ -1,5 +1,6 @@
 ---
 photo_packages:
+  - name: darktable
   - name: geeqie
   - name: gimp
   - name: inkscape

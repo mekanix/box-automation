@@ -56,14 +56,6 @@
     src: gitconfig.j2
     dest: "~{{ user }}/.gitconfig"
 
-- name: install pyenv
-  become: yes
-  become_user: "{{ user }}"
-  git:
-    repo: "https://github.com/yyuu/pyenv"
-    update: no
-    dest: "~{{ user }}/.pyenv"
-
 - name: link config
   become: yes
   become_user: "{{ user }}"
@@ -73,12 +65,3 @@
     dest: "~{{ user }}/{{ item.name }}"
     force: yes
     state: link
-
-- name: setup regular mail checking
-  become: yes
-  become_user: "{{ user }}"
-  cron:
-    name: "mail checking"
-    job: "~/bin/cron.sh"
-    minute: "*"
-    user: "{{ user }}"

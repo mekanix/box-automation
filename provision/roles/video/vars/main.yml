@@ -1,4 +1,3 @@
 ---
 video_packages:
-  - name: kdenlive
   - name: mpv

@@ -1,5 +1,5 @@
 ---
 communication_packages:
-  - name: mutt
+  - name: neomutt
   - name: offlineimap
   - name: weechat
