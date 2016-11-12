@@ -5,16 +5,14 @@
   pkgng:
     name: "{{ item.name }}"
 
-# - name: configure slim
-#   become: yes
-#   template:
-#     src: slim.conf.j2
-#     dest: /etc/slim.conf
+- name: configure slim
+  become: yes
+  template:
+    src: slim.conf.j2
+    dest: /usr/local/etc/slim.conf
 
-# - name: configure trackpoint in X
-#   become: yes
-#   template:
-#     src: 20-thinkpad.conf.j2
-#     dest: /usr/share/X11/xorg.conf.d/20-thinkpad.conf
-#     owner: root
-#     group: root
+- name: configure i3status
+  become: yes
+  template:
+    src: i3status.conf.j2
+    dest: /usr/local/etc/i3status.conf
