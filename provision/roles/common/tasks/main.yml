@@ -11,3 +11,16 @@
     src: /usr/local/bin/bash
     dest: /bin/bash
     state: link
+
+- name: configure sysctl
+  become: yes
+  template:
+    src: sysctl.conf.j2
+    dest: /etc/sysctl.conf
+
+- name: configure rc.conf.d
+  become: yes
+  with_items: "{{ common_rc }}"
+  template:
+    src: "{{ item.name }}.j2"
+    dest: "/etc/rc.conf.d/{{ item.name }}"

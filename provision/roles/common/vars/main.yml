@@ -4,3 +4,18 @@ common_packages:
   - name: bash
   - name: curl
   - name: fish
+
+common_rc:
+  - name: dbus
+  - name: lockd
+  - name: mountd
+  - name: moused
+  - name: nfsd
+  - name: ntpd
+  - name: ntpdate
+  - name: routing
+  - name: rpcbind
+  - name: slim
+  - name: statd
+  - name: syscons
+  - name: vboxnet

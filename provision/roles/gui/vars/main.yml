@@ -11,3 +11,4 @@ gui_packages:
   - name: slock
   - name: unclutter
   - name: xautolock
+  - name: xorg
