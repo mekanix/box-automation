@@ -1,6 +1,7 @@
 ---
 audio_packages:
   - name: ardour
+  - name: gtmixer
   - name: jackit
   - name: ncmpcpp
   - name: normalize

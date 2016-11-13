@@ -1,5 +1,7 @@
 ---
 communication_packages:
+  - name: diligent
   - name: neomutt
   - name: offlineimap
+  - name: pidgin
   - name: weechat
