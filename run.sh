@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 export ANSIBLE_HOST_KEY_CHECKING=False
 
