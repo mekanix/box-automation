@@ -1,4 +1,10 @@
 ---
+- name: setup repository
+  become: yes
+  template:
+    src: FreeBSD.conf.j2
+    dest: /etc/pkg/FreeBSD.conf
+
 - name: install common packages
   become: yes
   with_items: "{{ common_packages }}"
