@@ -7,3 +7,4 @@ audio_packages:
   - name: normalize
   - name: oss
   - name: sox
+  - name: virtual_oss_ctl

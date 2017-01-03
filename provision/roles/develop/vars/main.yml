@@ -1,11 +1,13 @@
 ---
 develop_packages:
+  - name: cbsd
   - name: cmake
   - name: curl
   - name: emacs25
   - name: gist
   - name: git-lite
   - name: node
+  - name: npm
   - name: python
   - name: tmux
   - name: vagrant

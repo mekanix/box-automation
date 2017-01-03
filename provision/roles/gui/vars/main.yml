@@ -1,6 +1,7 @@
 ---
 gui_packages:
   - name: arandr
+  - name: dunst
   - name: evince
   - name: i3
   - name: i3status

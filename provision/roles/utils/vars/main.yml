@@ -1,6 +1,7 @@
 ---
 util_packages:
-  - name: keepassx2
+  - name: keepassx
+  - name: inotify-tools
   - name: pv
   - name: the_silver_searcher
   - name: unzip
