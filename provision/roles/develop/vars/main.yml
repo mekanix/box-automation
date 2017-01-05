@@ -2,12 +2,13 @@
 develop_packages:
   - name: cbsd
   - name: cmake
-  - name: curl
   - name: emacs25
   - name: gist
   - name: git-lite
+  - name: grub2-bhyve
   - name: node
   - name: npm
+  - name: portmaster
   - name: python
   - name: tmux
   - name: vagrant
