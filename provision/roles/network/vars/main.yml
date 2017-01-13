@@ -5,3 +5,4 @@ network_packages:
   - name: sshpass
   - name: syncthing
   - name: wget
+  - name: wpa_gui
