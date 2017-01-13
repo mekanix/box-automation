@@ -14,7 +14,7 @@ base:
 		fetch $(GITHUB_BASE) -o $(TMP_FILE); \
 		sudo cbsd bremove freebsd-11-base || true; \
 		sudo cbsd bimport jname=$(TMP_FILE) new_jname=$(RANDOM_MAC_STRING); \
-		rm $(TMP_FILE)
+		rm $(TMP_FILE); \
 		sudo sqlite3 /cbsd/jails-system/$(RANDOM_MAC_STRING)/local.sqlite 'DELETE FROM bhyvedsk WHERE jname != "$(RANDOM_MAC_STRING)";'; \
 		sudo sqlite3 /cbsd/jails-system/$(RANDOM_MAC_STRING)/local.sqlite 'DELETE FROM bhyvenic WHERE jname != "$(RANDOM_MAC_STRING)";'; \
 		sudo cbsd bclone old=$(RANDOM_MAC_STRING) new=freebsd-11-base; \
@@ -36,14 +36,18 @@ init: base
 up: init
 	@sudo cbsd bstart $(PROJECT) || true
 
+wait_msg:
+	@echo "Waiting for SSH to become available"
+
 wait_ping:
 	@sleep 1
-	@ping -c 1 $(PROJECT) || $(MAKE) wait_ping
+	@ping -c 1 $(PROJECT) >/dev/null 2>&1 || $(MAKE) wait_ping
 
 wait_ssh:
-	@ssh -i .ssh/bhyve-insecure devel@$(PROJECT) exit || $(MAKE) wait_ssh
+	@sleep 1
+	@ssh -i .ssh/bhyve-insecure devel@$(PROJECT) exit >/dev/null 2>&1 || $(MAKE) wait_ssh
 
-wait: wait_ping wait_ssh
+wait: wait_msg wait_ping wait_ssh
 
 setup:
 	@sed -e "s:PROJECT:$(PROJECT):g" provision/inventory.tpl >provision/inventory/bhyve
