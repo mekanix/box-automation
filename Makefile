@@ -49,6 +49,9 @@ setup:
 	@sed -e "s:PROJECT:$(PROJECT):g" provision/inventory.tpl >provision/inventory/bhyve
 	@sed -e "s:PROJECT:$(PROJECT):g" provision/group_vars/all.tpl >provision/group_vars/all
 
+down:
+	@sudo cbsd bstop $(PROJECT)
+
 destroy:
 	@sudo cbsd bremove $(PROJECT)
 	@sudo rm -f /usr/local/etc/dnsmasq.d/$(PROJECT).vm.conf
