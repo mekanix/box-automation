@@ -16,3 +16,10 @@
   template:
     src: i3status.conf.j2
     dest: /usr/local/etc/i3status.conf
+
+- name: enable rgb subpixel config
+  become: yes
+  file:
+    src: /usr/local/etc/fonts/conf.avail/10-sub-pixel-rgb.conf
+    dest: /usr/local/etc/fonts/conf.d/10-sub-pixel-rgb.conf
+    state: link
