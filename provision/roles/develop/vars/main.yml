@@ -11,6 +11,4 @@ develop_packages:
   - name: portmaster
   - name: python
   - name: tmux
-  - name: vagrant
   - name: vim-lite
-  - name: virtualbox-ose
