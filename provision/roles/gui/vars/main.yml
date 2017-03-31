@@ -1,6 +1,7 @@
 ---
 gui_packages:
   - name: arandr
+  - name: blender
   - name: dunst
   - name: evince
   - name: i3
