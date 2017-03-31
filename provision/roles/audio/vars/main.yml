@@ -1,10 +1,9 @@
 ---
 audio_packages:
   - name: ardour5
-  - name: gtmixer
   - name: jackit
-  - name: ncmpcpp
   - name: normalize
   - name: oss
+  - name: pulseaudio
   - name: sox
   - name: virtual_oss_ctl

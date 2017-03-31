@@ -24,6 +24,12 @@
     src: sysctl.conf.j2
     dest: /etc/sysctl.conf
 
+- name: configure make
+  become: yes
+  template:
+    src: make.conf.j2
+    dest: /etc/make.conf
+
 - name: configure rc.conf.d
   become: yes
   with_items: "{{ common_rc }}"

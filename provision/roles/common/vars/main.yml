@@ -19,4 +19,4 @@ common_rc:
   - name: slim
   - name: statd
   - name: syscons
-  - name: vboxnet
+  - name: virtual_oss
