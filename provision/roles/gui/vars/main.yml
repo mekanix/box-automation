@@ -14,3 +14,4 @@ gui_packages:
   - name: unclutter
   - name: xautolock
   - name: xorg
+  - name: webcamd
