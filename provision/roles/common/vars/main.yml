@@ -20,3 +20,4 @@ common_rc:
   - name: statd
   - name: syscons
   - name: virtual_oss
+  - name: webcamd
