@@ -1,6 +1,5 @@
 ---
 web_packages:
-  - name: chromium
   - name: elinks
   - name: firefox
   - name: hotot

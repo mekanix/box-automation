@@ -1,8 +1,6 @@
 ---
 network_packages:
-  - name: bind-tools
   - name: nmap
   - name: sshpass
   - name: syncthing
-  - name: wget
   - name: wpa_gui

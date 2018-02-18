@@ -2,6 +2,7 @@
 common_packages:
   - name: automount
   - name: bash
+  - name: beadm
   - name: curl
   - name: fish
   - name: grub2-bhyve
@@ -13,7 +14,6 @@ common_rc:
   - name: moused
   - name: nfsd
   - name: ntpd
-  - name: ntpdate
   - name: routing
   - name: rpcbind
   - name: slim

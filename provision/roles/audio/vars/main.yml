@@ -1,9 +1,6 @@
 ---
 audio_packages:
   - name: ardour5
-  - name: jackit
   - name: normalize
-  - name: oss
-  - name: pulseaudio
   - name: sox
   - name: virtual_oss_ctl
