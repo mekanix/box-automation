@@ -3,4 +3,4 @@ network_packages:
   - name: nmap
   - name: sshpass
   - name: syncthing
-  - name: wpa_gui
+  - name: wpa_supplicant_gui

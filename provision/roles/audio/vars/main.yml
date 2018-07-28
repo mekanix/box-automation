@@ -1,6 +1,10 @@
 ---
 audio_packages:
   - name: ardour5
+  - name: ario
+  - name: calf-lv2
+  - name: drumgizmo
+  - name: eq10q-lv2
   - name: normalize
   - name: sox
   - name: virtual_oss_ctl

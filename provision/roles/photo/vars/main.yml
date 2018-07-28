@@ -4,4 +4,3 @@ photo_packages:
   - name: geeqie
   - name: gimp
   - name: inkscape
-  - name: scrot
