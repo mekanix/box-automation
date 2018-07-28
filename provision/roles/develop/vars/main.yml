@@ -1,12 +1,11 @@
 ---
 develop_packages:
-  - name: cbsd
   - name: cmake
-  - name: gist
   - name: git-lite
   - name: grub2-bhyve
+  - name: neovim
   - name: node
   - name: python
+  - name: reggae
   - name: tmux
-  - name: vim
   - name: yarn
