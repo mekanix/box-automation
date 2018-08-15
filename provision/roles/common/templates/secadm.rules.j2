@@ -1,0 +1,23 @@
+secadm {
+	pax {
+		path: "/usr/local/lib/firefox/firefox-bin",
+		pageexec : false,
+		mprotect: false,
+	},
+	pax {
+		path: "/usr/local/lib/firefox/firefox",
+		pageexec : false,
+		mprotect: false,
+	},
+	pax {
+		path: "/usr/local/bin/python2.7",
+		pageexec : false,
+		mprotect: false,
+	},
+	pax {
+		path: "/usr/local/bin/diligent",
+		mprotect: "false",
+		pageexec: "false"
+	},
+}
+

@@ -20,6 +20,7 @@ common_rc:
   - name: rpcbind
   - name: slim
   - name: statd
+  - name: secadm
   - name: syscons
   - name: virtual_oss
   - name: webcamd
