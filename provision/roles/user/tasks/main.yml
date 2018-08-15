@@ -4,4 +4,4 @@
   user:
     name: "{{ user }}"
     shell: /usr/local/bin/fish
-    groups: wheel,operator
+    groups: wheel,video

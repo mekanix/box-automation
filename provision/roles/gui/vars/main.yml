@@ -6,6 +6,7 @@ gui_packages:
   - name: evince
   - name: i3
   - name: i3status
+  - name: libreoffice
   - name: quiterss
   - name: rofi
   - name: rxvt-unicode
