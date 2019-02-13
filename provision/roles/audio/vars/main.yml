@@ -7,5 +7,4 @@ audio_packages:
   - name: eq10q-lv2
   - name: normalize
   - name: sox
-  - name: swfplugins
   - name: virtual_oss_ctl

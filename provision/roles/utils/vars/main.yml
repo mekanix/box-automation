@@ -1,6 +1,6 @@
 ---
 util_packages:
-  - name: KeePassX
+  - name: keepassxc
   - name: inotify-tools
   - name: pv
   - name: the_silver_searcher

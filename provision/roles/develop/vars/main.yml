@@ -7,5 +7,6 @@ develop_packages:
   - name: node
   - name: python
   - name: reggae
+  - name: tightvnc
   - name: tmux
   - name: yarn

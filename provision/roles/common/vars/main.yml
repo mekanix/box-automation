@@ -2,12 +2,9 @@
 common_packages:
   - name: automount
   - name: bash
-  - name: beadm
   - name: curl
   - name: fish
   - name: grub2-bhyve
-  - name: secadm
-  - name: secadm-kmod
 
 common_rc:
   - name: dbus
