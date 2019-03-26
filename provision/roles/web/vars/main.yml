@@ -1,6 +1,5 @@
 ---
 web_packages:
-  - name: elinks
   - name: firefox
-  - name: hotot
+  - name: lynx
   - name: rtorrent
