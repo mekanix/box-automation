@@ -3,7 +3,7 @@ gui_packages:
   - name: arandr
   - name: blender
   - name: dunst
-  - name: evince
+  - name: evince-lite
   - name: i3
   - name: i3status
   - name: libreoffice
