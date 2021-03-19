@@ -1,9 +1,8 @@
 ---
 audio_packages:
-  - name: ardour5
+  - name: ardour6
   - name: ario
   - name: calf-lv2
   - name: drumgizmo
   - name: eq10q-lv2
-  - name: normalize
   - name: sox

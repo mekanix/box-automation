@@ -4,9 +4,8 @@ develop_packages:
   - name: git-lite
   - name: grub2-bhyve
   - name: neovim
-  - name: node
   - name: python
   - name: reggae
-  - name: tightvnc
+  - name: remmina-lite
   - name: tmux
   - name: yarn

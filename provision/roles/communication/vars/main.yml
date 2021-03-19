@@ -1,7 +1,6 @@
 ---
 communication_packages:
-  - name: diligent
   - name: gajim
   - name: neomutt
-  - name: offlineimap
+  - name: isync
   - name: weechat

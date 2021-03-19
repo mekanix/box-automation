@@ -3,13 +3,13 @@ gui_packages:
   - name: arandr
   - name: blender
   - name: dunst
-  - name: evince-lite
+  - name: atril-lite
   - name: i3
   - name: i3status
   - name: libreoffice
   - name: quiterss
   - name: rofi
-  - name: rxvt-unicode
+  - name: alacritty
   - name: slim
   - name: slock
   - name: unclutter
