@@ -4,6 +4,8 @@ develop_packages:
   - name: git-lite
   - name: grub2-bhyve
   - name: neovim
+  - name: py37-black
+  - name: py37-jedi
   - name: python
   - name: reggae
   - name: remmina-lite
