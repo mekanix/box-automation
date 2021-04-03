@@ -1,19 +1,20 @@
 ---
 gui_packages:
+  - name: alacritty
   - name: arandr
+  - name: atril-lite
   - name: blender
   - name: dunst
-  - name: atril-lite
+  - name: gnome-keyring
   - name: i3
   - name: i3status
   - name: libreoffice
   - name: quiterss
   - name: rofi
-  - name: alacritty
   - name: slim
   - name: slock
   - name: unclutter
+  - name: webcamd
   - name: xautolock
   - name: xorg
   - name: xsel-conrad
-  - name: webcamd

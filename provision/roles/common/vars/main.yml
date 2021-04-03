@@ -5,6 +5,7 @@ common_packages:
   - name: curl
   - name: fish
   - name: grub2-bhyve
+  - name: pkg-provides
 
 common_rc:
   - name: dbus
@@ -15,9 +16,9 @@ common_rc:
   - name: ntpd
   - name: routing
   - name: rpcbind
+  - name: secadm
   - name: slim
   - name: statd
-  - name: secadm
   - name: syscons
   - name: virtual_oss
   - name: webcamd
