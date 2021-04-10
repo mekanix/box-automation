@@ -3,11 +3,13 @@ develop_packages:
   - name: cmake
   - name: git-lite
   - name: grub2-bhyve
+  - name: llvm11
   - name: neovim
   - name: py37-black
   - name: py37-jedi
+  - name: py37-python-language-server
   - name: python
   - name: reggae
-  - name: remmina-lite
+  - name: tightvnc
   - name: tmux
   - name: yarn
